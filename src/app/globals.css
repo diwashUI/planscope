@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #09090b;
+  color: #fafafa;
+}
+
+::selection {
+  background: #fbbf24;
+  color: #09090b;
+}
+
+/* pulsing halo behind the bottleneck node */
+.bottleneck-pulse {
+  animation: bottleneck-pulse 1.6s ease-in-out infinite;
+}
+
+@keyframes bottleneck-pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bottleneck-pulse {
+    animation: none;
+  }
+}
