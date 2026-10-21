@@ -176,6 +176,14 @@ export default function Home() {
 
       <footer className="border-t border-zinc-900 px-6 py-8 text-center font-mono text-xs text-zinc-600">
         PlanScope — your query plans, as a movie. 100% client-side.
+        <br />
+        <span className="mt-2 inline-block">
+          More free tools:{" "}
+          <a href="https://privatepdfapp.vercel.app" className="underline hover:text-zinc-400">
+            PrivatePDF
+          </a>{" "}
+          — PDF tools that never upload your files.
+        </span>
       </footer>
     </div>
   );
